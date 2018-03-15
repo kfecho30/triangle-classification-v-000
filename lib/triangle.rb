@@ -24,6 +24,6 @@ class Triangle
 
   class TriangleError < StandardError
     def initialize
-      puts "TriangleError"
+      puts "Triangle Error"
   end
 end
