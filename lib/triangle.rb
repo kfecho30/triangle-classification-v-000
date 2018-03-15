@@ -19,11 +19,6 @@ class Triangle
       :scalene
     end
   end
-  def real_tri
-    unless [@s1, @s2, @s3].all? {|n| n > 0} && (@s1+@s2 > @s3 && @s2+@s3 > @s1 && @s1+@s3 > @s2)
-      raise TriangleError
-    end
-  end
 
   class TriangleError < StandardError
   end
