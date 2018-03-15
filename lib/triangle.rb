@@ -7,14 +7,14 @@ class Triangle
   end
 
   def kind
-      real_tri
-      if @s1 == @s2 && @s1 == @s3
-        :equilateral
-      elsif @s1 == @s2 || @s2 == @s3 || @s1 == @s3
-        :isosceles
-      else
-        :scalene
-      end
+    real_tri
+    if @s1 == @s2 && @s1 == @s3
+      :equilateral
+    elsif @s1 == @s2 || @s2 == @s3 || @s1 == @s3
+      :isosceles
+    else
+      :scalene
+    end
   end
   def real_tri
     unless [@s1, @s2, @s3].all? {|n| n > 0} && (@s1+@s2 > @s3 && @s2+@s3 > @s1 && @s1+@s3 > @s2)
